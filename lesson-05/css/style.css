@@ -1,0 +1,255 @@
+/* селектор {
+    властивість: значення властивості;
+    властивість: значення властивості;
+    властивість: значення властивості;
+    властивість: значення властивості;
+    властивість: значення властивості;
+    властивість: значення властивості;
+    властивість: значення властивості;
+    властивість: значення властивості;
+}
+
+селектор {
+    властивість: значення властивості;
+    властивість: значення властивості;
+    властивість: значення властивості;
+}
+
+селектор {
+    властивість: значення властивості;
+    властивість: значення властивості;
+    властивість: значення властивості;
+}
+
+селектор {
+    властивість: значення властивості;
+    властивість: значення властивості;
+} */
+/* 
+h3 {
+    font-size: 50px;
+}
+
+div {
+    font-size: 30px;
+}
+
+.text {
+    font-size: 70px;
+}
+
+.text {
+    font-size: 50px;
+}
+
+#map {
+    font-size: 25px;
+}
+
+.about-us-title {
+    font-size: 34px;
+}
+*/
+
+/* .title {
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+}  */
+
+.article {
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 30px;
+    /* color: green; */
+    /* color: #ff0000; */
+    /* color: rgb(0, 218, 0); */
+    color: rgba(0,218,0, 0.5);
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    text-decoration: line-through;
+}
+/* 
+.link {
+    text-decoration: none;
+}
+
+
+.about {
+    color: red;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.about-text {
+    color: green;
+}
+
+
+.about-link {
+    color: black;
+}
+
+
+
+p {
+    color: red;
+}
+
+
+.albert {
+    font-size: 34px;
+}
+
+.albert {
+    font-weight: bold;
+}
+
+
+.elem {
+    font-size: 23px;
+} */
+
+
+
+
+
+.box-text {
+
+}
+
+
+.box {
+    color: green;
+}
+
+
+.box .box-text {
+    font-size: 20px;
+    color: red;
+}
+
+
+
+
+.mama p {
+    font-size: 23px;
+}
+
+.mama a {
+    color: red;
+}
+
+
+div .papa {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.element {          /*0 1 0*/
+    color: red;
+}
+
+.item span {        /*0 1 1*/
+    color: gray;
+}
+
+.note .element {        /*0 2 0*/
+    color: purple;
+}
+
+.hillel .note .table span {     /*0 3 1 */
+    color: brown;
+}
+
+#box span {         /*1 0 1*/
+    color: aquamarine;
+}
+
+.hillel article .table .item .element {     /*0 4 1 */
+    color: darkolivegreen;
+}
+
+#box .table .element {      /*1 2 0 */
+    color: greenyellow;
+}
+
+
+.hillel .item .element {        /*0 3 0*/
+    color: dodgerblue;
+}
+
+
+.table .item .element {     /*0 3 0*/
+    color: gold;
+}
+
+
+
+.element {
+    font-size: 24px;
+}
+
+
+.element3 {
+    font-size: 48px;
+}
+
+
+
+
+.section {
+    background-color: greenyellow;
+    /* padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 50px; */
+
+
+    /* padding: 50px; */
+    /* padding: 50px 10px; */
+    /* padding: 50px 10px 100px; */
+    /* padding: 0 30px 0 50px; */
+    /* padding: 30px 0; */
+    /* padding: 0 40px; */
+
+
+    /* margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 50px; */
+
+    /* margin: 30px; */
+
+
+    /* border: 5px solid red; */
+
+    border-top: 10px dotted black;
+    border-right: 5px dashed blueviolet;
+
+
+    border-width: 10px;
+    border-style: dotted;
+    border-color: black;
+
+
+    height: 200px;
+    width: 300px;
+
+    text-align: center;
+   
+}
