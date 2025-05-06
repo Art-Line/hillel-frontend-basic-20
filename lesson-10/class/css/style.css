@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.menu li {
+    color: red;
+    margin-right: 20px;
+}
+
+/* .menu li:first-child {
+    color: green;
+    margin-right: 0;
+}
+
+.menu li:last-child {
+    color: green;
+    margin-right: 0;
+} */
+
+
+/* .menu li:nth-child(even) {
+    color: green;
+} */
+
+
+.menu li:nth-last-child(2) {
+    color: green;
+}
+
+/* a*n + b
+
+a b
+
+n 0,1,2,3,4,4,5,6,6,6,7 */
+
+
+
+/* .box p:first-child {
+    color: red;
+} */
+
+.box p:first-of-type{
+    color: red;
+}
+
+.box p:last-of-type{
+    color: red;
+}
+
+.box p:nth-of-type(2) {
+    color: purple;
+}
+
+.box p:nth-last-of-type(3) {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.text {
+
+}
+
+.text::first-letter {
+    font-size: 34px;
+    color: red;
+}
+
+.text::first-line {
+    color: green;
+    font-size: 24px;
+} */
+
+
+.hiking {
+    display: flex;
+    align-items: center;
+}
+
+.hiking::before {
+    content: '';
+    width: 72px;
+    height: 2px;
+    background-color: orange;
+}
+
+
+
+/* .article {
+    font-size: 24px;
+    display: flex;
+    position: relative;
+    width: 300px;
+}
+
+.article::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+    right: -40px;
+    bottom: -20px;
+}
+
+.article::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: red;
+} */
