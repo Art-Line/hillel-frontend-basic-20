@@ -1,0 +1,209 @@
+/* :root {
+    font-size: 16px;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    border: 10px solid black;
+    
+}
+
+
+.text span {  
+    font-size: 24px;
+    color: green;
+}
+
+span { 
+    font-size: 34px !important;
+    color: hotpink !important;
+}
+
+
+
+.name {}
+
+#id {}
+
+p {}
+
+.name .class {
+
+}
+
+
+
+
+
+p, 
+div {
+    font-size: 23px;
+}
+
+.name2,
+#ry,
+.box .nem {
+
+}
+
+
+
+
+
+
+
+/* .menu > li {
+    border-bottom: 2px solid red;
+} */
+
+
+
+
+
+.elem01 {
+    color: red;
+}
+
+/* .elem01:hover + .elem-009 {
+    color: green;
+} */
+
+
+
+.elem01:hover ~ .elem-009 {
+    color: green;
+}
+
+
+
+input[type=text] {
+    color: red;
+}
+
+.btn[type=submit] {
+    color: red;
+}
+
+.rem-box-01 {
+    font-size: 1rem;
+}
+
+
+
+
+
+/* px 
+% 
+em 
+root em 
+vh 
+vw  */
+
+
+/* .box100 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.box100-inset {
+    width: 200px;
+    background-color: red;
+    padding-top: 10%;
+} */
+
+
+.parent {
+    font-size: 20px;
+    padding-top: 1em; 
+    padding-right: 2em; 
+}
+
+.child {
+    font-size: 1.2em; 
+    padding-top: 1em;  
+    padding-right: 2em;  
+}
+
+
+
+.texbox {
+    font-size: 10px;
+    line-height: 1.71em;
+}
+
+
+
+
+
+
+.screen {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* background-size: 200px 20px; */
+    background-size: cover;
+    /* background-size: contain; */
+    height: 100vh;
+    position: relative;
+}
+
+.screen::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.screen-insert {
+    position: relative;
+    z-index: 1;
+}
+
+/* .screen-title {
+    color: #fff;
+    font-size: 5vw;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-gradient {
+    width: 200px;
+    height: 200px;
+    /* background-image: linear-gradient(red 40%, green 40%, green 60%, blue 60%); */
+    background-image: linear-gradient(32deg, red, green);
+}
+
+
+
+
+.p {
+    background-image: url();
+    background-position: right 17px center;
+}
+
+
