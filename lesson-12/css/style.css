@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+
+.search-btn:hover path {
+    fill: red;
+}
+
+
+.box-01 {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    background-color: red;
+    transform: rotate(45deg);
+}
+
+
+.box-02 {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+}
+
+
+
+
+.box-03 {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    background-color: red;
+    transform: translateX(200px);
+}
+
+
+
+
+.modal {
+    width: 420px;
+    padding: 20px;
+    background-color: yellow;
+    position: fixed;
+    top:100px;
+    left: 50%;
+    /* margin-left: -210px; */
+    transform: translateX(-50%);
+}
+
+
+.slider {
+    max-width: 991px;
+    display: flex;
+    padding: 0 50px;
+    position: relative;
+}
+
+.slider-item {
+    border: 3px solid red;
+    padding: 15px;
+    background-color: gray;
+    margin: 0 10px;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+}
+.arrow-left {
+    left: 0;
+    transform: translateY(-50%) rotate(180deg);
+}
+.arrow-right {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+
+
+.box-4 {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    background-color: red;
+    
+}
+
+.box-4:hover {
+    transform: scale(1.1);
+}
+
+
+
+.box-5 {
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+    background-color: red;
+    transform: skewX(15deg);
+}
+
+
+
+
+.box-10 {
+    width: 300px;
+    /* height: 20px; */
+    font-size: 34px;
+    color: brown;
+    background-color: yellow;
+    transition-duration: 300ms;
+    transition-property: color, background-color;
+    /* transition-delay: 2s; */
+    transition-timing-function: linear;
+
+}
+
+.box-10:hover {
+    color: blue;
+    background-color: red;
+}
+
+
+
+.transform-rotate {
+    margin: 50px;
+    width: 200px;
+    /* height: 200px; */
+    background-color: green;
+    transition-duration: 1s;
+    transition-property: transform;
+
+}
+
+.transform-rotate:hover {
+    transform-origin: 0 100%;
+    transform: rotate(-90deg);
+}
+
+
+
+.default {
+    background-color: green;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    transition-duration: 300ms;
+    transition-property: opacity;
+}
+
+.default:hover {
+    opacity: 0.7;
+}
+
+
+.test{
+    background-color: rgba(45,45,6,0.5);
+}
+
+
+.menu-item {
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-item:hover {
+    text-shadow: 0.5px 0 0 black,  0 0.5px 0 black;
+}
+
+.checkbox-label {
+
+}
+
+.checkbox-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox-text::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 2px solid #3D3D3D;
+    border-radius: 4px;
+}
+
+.checkbox-input:checked + .checkbox-text::before {
+    background-image: url('../img/check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.radio-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.radio-text::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.radio-input:checked + .radio-text::before {
+    background-color: green;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+
+
+
+
+.h1 {
+    font-size: 50px;
+    color: red;
+    text-shadow: 0 0 6px rgba(0,0,0,0.8),
+                10px 10px 4px purple;
+}
+
+
+.box-shadow {
+    color: black;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    box-shadow: 0 0 5px green, inset 0 0 10px rebeccapurple;
+}
+
+
+.gradient {
+    height: 1000px;
+    border-radius: 0px 0px 12px 12px;
+    /* background: url('../img/symbol.svg') no-repeat center top, 
+                linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%); */
+
+
+
+    background-image: url('../img/symbol.svg'), 
+                        url('../img/check.svg'),
+                    linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+
+    background-repeat: no-repeat;
+
+    background-position: left top, right top;
+
+    background-size: 200px auto, 30px auto, contain;
+
+
+    box-shadow: 0 10px 0 red;
+
+
+    /* background-color: #fff;
+    background-image: url();
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;     
+    
+    
+    background: ; */
+}
