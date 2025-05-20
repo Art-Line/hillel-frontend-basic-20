@@ -1,0 +1,55 @@
+.goods {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        width: 25%;
+        padding: 0 10px 20px;
+    }
+    &__inset {
+        background-color: red;
+        padding: 20px;
+    }
+}
+
+// DF
+@media (max-width:991px) {
+    .goods {
+        &__item {
+            width: 33.333%;
+        }
+        &__inset {
+            background-color: green;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .goods {
+        &__item {
+            width: 50%;
+        }
+        &__inset {
+            background-color: blue;
+        }
+    }
+}
+
+
+
+
+
+// Mobile first
+
+// 768
+// 992
+// 1200
+// 1400
+
+
+// Desctop first
+
+// 767
+// 991
+// 1199
+// 1399

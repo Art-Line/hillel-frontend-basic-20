@@ -1,0 +1,27 @@
+.about {
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    &::after {
+        content: '';
+    }
+    &__title {
+        font-size: 34px;
+    }
+    &__text {
+        padding: 43px;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        &-item {
+            font-size: 22px;
+        }
+    }
+    &__link {
+        color: red;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
