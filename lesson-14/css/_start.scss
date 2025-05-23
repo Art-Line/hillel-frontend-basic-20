@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    background-image: url('../img/site-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #0B1D26;
+}
+
+.wrapper {
+    max-width: 1230px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    &_width-1790 {
+        max-width: 1790px;
+    }
+}
+
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 991px) { 
+    .body {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 767px) {
+
+}

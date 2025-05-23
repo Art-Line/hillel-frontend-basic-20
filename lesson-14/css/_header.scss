@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 182px;
+    &__logo {
+        img {
+            display: block;
+        }
+    }
+    &__account {
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+        background-image: url('../img/login.svg');
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        position: relative;
+        padding-top: 32px;
+        padding-bottom: 100px;
+        &__account {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+    }
+}
