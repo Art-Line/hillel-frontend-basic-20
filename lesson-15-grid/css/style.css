@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+
+.wrapper {
+    max-width: 1220px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.grid {
+    /* display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: min-content min-content min-content; */
+    /* grid-gap: 20px; */
+    /* row-gap: 20px;
+    column-gap: 30px; */
+
+    /* justify-items: center;
+    align-items: center; */
+}
+
+/* 
+.item-01 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.item-02 {
+    grid-column-start: 4;
+    grid-column-end: -1;
+
+    grid-row-start: 3;
+    grid-row-end: -1;
+}
+
+
+.item-04 {
+    grid-column: 2 / 4;
+
+    
+    justify-self: start;
+}
+
+.item-06 {
+    grid-row: 2 / 4;
+    align-self: start;
+}
+
+.item,
+.box {
+    border: 5px solid red;
+    padding: 20px;
+    font-size: 32px;
+}
+
+
+
+@media (min-width: 768px) {
+    .article {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .article__title {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        border: 1px solid black;
+    }
+    .article__text {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+.site {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: min-content 1fr min-content;
+
+    grid-template-areas: "footer footer"
+                        "aside main"
+                        "header header";
+}
+
+.header {
+    grid-area: header;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+} */
+
+
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: min-content min-content;
+    position: relative;
+}
+
+.header__top {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    margin: 0 -10px;
+    padding: 0 10px;
+}
+
+.header__address,
+.header__fb {
+    display: none;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.lang a {
+    color: #B3B3BA;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 7px;
+    border-radius: 8px;
+}
+
+.lang a:hover {
+    background-color: #F5F5FA;
+}
+
+.lang a.active {
+    color: #ffffff;
+    background-color: #F0145A;
+}
+
+.header__logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-box-logo img {
+    display: block;
+}
+
+.header__breadcrumbs {
+    color: #323264;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.header__breadcrumbs::before {
+    content: '';
+    background-image: url('../img/slash.svg');
+    width: 12px;
+    height: 26px;
+}
+
+
+.menu__btn {
+    cursor: pointer;
+    background-image: url('../img/menu-btn.svg');
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 33px;
+}
+.menu__btn.active {
+    background-image: url('../img/close.svg');
+}
+
+.menu__list {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 40px;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 0 4px black;
+    padding: 12px;
+    display: none;
+} 
+
+
+@media (min-width: 768px) {
+    .header {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+
+    }
+
+    .header__top {
+        justify-content: flex-start;
+        background: none;
+    }
+
+    .header__address,
+    .header__fb {
+        display: block;
+    }
+
+    .header__logo-box-logo img {
+        width: 130px;
+        height: 60px;
+    }
+
+    .header__breadcrumbs {
+   
+    }
+    
+    .header__breadcrumbs::before {
+        width: 21px;
+        height: 47px;
+        background-size: 21px 47px;
+    }
+
+    .menu__btn {
+        display: none;
+    }
+    .menu__list {
+        display: block;
+        position: static;
+        display: flex;
+        align-items: center;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        grid-template-columns: 1fr min-content;
+        grid-template-rows: min-content min-content;
+
+    }
+
+    .header__top {
+        grid-column: 2 / -1;
+    }
+
+    .header__logo-box {
+        grid-row: 1 / -1;
+    }
+
+    .header__address,
+    .header__phone {
+        white-space: nowrap;
+    }
+
+    .menu {
+        justify-self: end;
+    }
+}
