@@ -1,0 +1,28 @@
+.about-slider {
+    &__item {
+        border: 2px solid black;
+        padding: 20px;
+    }
+    &__dots {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 0 7px;
+            &.slick-active button {
+                opacity: 1;
+            }
+        }
+        button {
+            cursor: pointer;
+            background-color: #24A3FF;
+            opacity: 0.2;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: none;
+            font-size: 0;
+        }
+    }
+}
